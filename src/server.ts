@@ -5,7 +5,7 @@ import * as logger from 'morgan';
 import * as helmet from 'helmet';
 import * as compression from 'compression';
 import * as cors from 'cors';
-
+var path = require('path');
 //import routers
 import bookRoutes from './routers/books.route'
 import userRoutes from './routers/user.route'
@@ -49,9 +49,14 @@ class Server{
 
 
     routes(): void{
+        //static
+        //express.static('./');
         let router: express.Router;
         router = express.Router();
         // routes
+        this.app.get('/',(req,res)=>{
+            res.sendFile(path.join(__dirname + '/index.html'));
+        })
         this.app.use('/',router);
         this.app.use('/user', userRoutes);
         this.app.use('/books', bookRoutes);

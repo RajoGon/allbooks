@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Express server(node v6.1.11)</title>
+		</head>
+		<body>
+			<b>
+				<u>Refer the api sheet bellow to use the server</u>
+			
+			</b>
+			<hr>
+				<table cellspacing=0 border=1>
+					<tr>
+						<td style=min-width:50px><b>Base endpoint</b></td>
+						<td style=min-width:100px><b>http://rajoapp.eu-4.evennode.com/</b></td>
+						<td style=min-width:50px></td>
+						<td style=min-width:50px></td>
+						<td style=min-width:50px></td>
+					</tr>
+					<tr>
+						<td style=min-width:50px><b>Serial No.</b></td>
+						<td style=min-width:50px><b>Functions</b></td>
+						<td style=min-width:50px><b>Endpoint</b></td>
+						<td style=min-width:50px><b>Method</b></td>
+						<td style=min-width:50px><b>Body format(examples)</b></td>
+						<td style=min-width:50px><b>Complete url</b></td>
+					</tr>
+					<tr>
+						<td style=min-width:50px>1</td>
+						<td style=min-width:50px>Register user</td>
+						<td style=min-width:50px>user/register</td>
+						<td style=min-width:50px>post</td>
+						<td style=min-width:50px>{
+"userName": "test","password": "test123","email": "test@example.com","firstName": "Random","lastName": "User"
+}
+
+						
+						</td>
+						<td style=min-width:50px>http://rajoapp.eu-4.evennode.com/user/register</td>
+					</tr>
+					<tr>
+						<td style=min-width:50px>2</td>
+						<td style=min-width:50px>Get all user data</td>
+						<td style=min-width:50px>user/</td>
+						<td style=min-width:50px>get</td>
+						<td style=min-width:50px></td>
+						<td style=min-width:50px></td>
+					</tr>
+					<tr>
+						<td style=min-width:50px>3</td>
+						<td style=min-width:50px>Get user by username</td>
+						<td style=min-width:50px>user/{userName}</td>
+						<td style=min-width:50px>get</td>
+						<td style=min-width:50px></td>
+						<td style=min-width:50px></td>
+					</tr>
+					<tr>
+						<td style=min-width:50px>4</td>
+						<td style=min-width:50px>Update user using username</td>
+						<td style=min-width:50px>user/{userName}</td>
+						<td style=min-width:50px>put</td>
+						<td style=min-width:50px>{
+"userName": "test","password": "test123","email": "test@example.com","firstName": "Random","lastName": "User"
+}
+
+						
+						</td>
+						<td style=min-width:50px></td>
+					</tr>
+					<tr>
+						<td style=min-width:50px>5</td>
+						<td style=min-width:50px>Delete user</td>
+						<td style=min-width:50px>user/{userName}</td>
+						<td style=min-width:50px>delete</td>
+						<td style=min-width:50px></td>
+						<td style=min-width:50px></td>
+					</tr>
+				</table>
+				<hr>
+					<script style="display: none !important;">!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='
+						
+						<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t
+						
+						<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n
+							
+							<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n
+								
+								<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);
+								
+								</script>
+							</body>
+						</html>

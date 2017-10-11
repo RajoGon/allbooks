@@ -7,6 +7,7 @@ var logger = require("morgan");
 var helmet = require("helmet");
 var compression = require("compression");
 var cors = require("cors");
+var path = require('path');
 //import routers
 var books_route_1 = require("./routers/books.route");
 var user_route_1 = require("./routers/user.route");
@@ -44,9 +45,14 @@ var Server = /** @class */ (function () {
         this.app.use(cors());
     };
     Server.prototype.routes = function () {
+        //static
+        //express.static('./');
         var router;
         router = express.Router();
         // routes
+        this.app.get('/', function (req, res) {
+            res.sendFile(path.join(__dirname + '/index.html'));
+        });
         this.app.use('/', router);
         this.app.use('/user', user_route_1.default);
         this.app.use('/books', books_route_1.default);
